@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Resume</title>
+</head>
+<body>
+<form action="Resume" method="get">
+First name: <input type="text" name="firstname"><br>
+<br>
+Last name: <input type="text" name="lastname">
+<br>
+<br>Upload Photo <input type="file" name="fileupload" accept="image/*"/>
+<br>
+<br>Gender <input type="radio" name="gender" value="male" checked>Male
+<input type="radio" name="gender" value="female" checked>Female
+<br>
+<br>
+Contact Number: <input type="text" name="mobileno" pattern="[7-9]{1}[0-9]{9}"><br>
+<br>E-mail: <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+<br>
+<br>
+Website: <input type="url" name="website" type="url"><br>
+<br>
+<br>Highest Qualification <select name="dropdown">
+<option value ="Graduation" selected>Graduation</option>
+<option value ="PostGraduation" selected>PostGraduation</option>
+<option value ="Intermediate" selected>Intermediate</option>
+</select>
+<br>
+<br>
+Hobbies
+<br/>
+<select multiple size="5" name="hobbies">
+<option value="Singing">Singing</option>
+<option value="Dancing">Dancing</option>
+<option value="Playing">Playing</option>
+<option value="Rading">Reading</option>
+<option value="Traveling">Traveling</option>
+</select>
+<br>
+<br>Address: <br/>
+<textarea rows= "5" cols= "50" name="address"></textarea>
+<br>
+<br>
+Skills <input type="checkbox" name="C" value="on">C
+<input type="checkbox" name="C++" value="on">C++
+<input type="checkbox" name=".net" value="on">.net
+<input type="checkbox" name="Java" value="on">Java
+<input type="checkbox" name="Python" value="on">Python
+<br>
+
+<br>Summary: <br/>
+<textarea rows= "5" cols= "50" name="summary">
+</textarea>
+<br>
+<br><input type="submit" name="submit" value="Submit"/>
+<input type="reset" name="reset" value="Clear"/>
+</form>
+</body>
+</html>
